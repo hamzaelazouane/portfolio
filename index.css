@@ -1,0 +1,515 @@
+*{
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   margin: 0;
+   padding: 0;
+
+}
+body{
+    transition: 2s;
+}
+header
+{
+    box-shadow:0px 5px 15px white;
+    background-color:rgb(15, 48, 88) ;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 86%;
+    z-index: 100;
+    padding:1.4% 7%;
+    transition: 2s;
+}
+.menu
+{
+
+    font-weight: 400;
+    list-style: none;
+    display: flex;
+    position: relative;
+    margin: auto;
+    width:100%;
+    justify-content: right;
+}
+
+.menu>a
+{
+    margin-left: 23px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    width: max-content;
+
+}
+
+.name
+{
+    color: white;
+    display: flex;
+    width: max-content;
+}
+.name>a
+{
+    position: relative;
+    width: 8%;
+}
+.name>a> img
+{
+    width:100%;
+    position: relative;
+    border-radius: 1000px;
+    margin-right: 2%;
+    border: 1.6px solid white;
+}
+.sectionhome
+{
+
+    transition: 2s;
+    text-align: center;
+    z-index: 0;
+    padding: 5% 0%;
+    height:79.6vh;
+    background-size: cover;
+    background:url(./lesimages/simple-gradient-background-vector-winter-blue-pink_53876-105768.webp) left;
+}
+.sectionhome:hover
+{
+  background-position: right;
+
+}
+.sectionhome h1
+{
+    color: rgb(15, 48, 88);
+    font-size: 80pt;
+    position: relative;
+    margin:4% auto;
+    width: max-content;
+}
+.resume
+{
+   border-radius: 4px;
+    text-decoration: none;
+    color: rgb(0, 39, 87);
+    background-color: none;
+    border:2px solid rgb(0, 39, 87); ;
+    position: relative;
+    width: max-content;
+    padding: 0.8% 3%;
+    transition: 1s;
+}
+.resume:hover
+{
+   background-color: rgb(0, 39, 87);
+   color: white;
+}
+#icongithub
+{
+    font-size:45px ;
+    color: rgb(0, 39, 87);
+    text-decoration: none;
+    position: relative;
+    transition: 0.5s;
+    margin-top: 2% ;
+}
+
+.sectionabout
+{
+    position: relative;
+    padding: 17.9% 0%;
+    height:27vh;
+    background-color: antiquewhite;
+    background:url(./lesimages/aboutimage.jpg) right;
+    background-size: 140%;
+    transition: 2s;
+
+}
+.sectionabout:hover
+{
+    background-position: left;
+    /* background-size: 140%; */
+}
+.sectionabout>div
+{
+    color: rgb(0, 39, 87);
+    margin: auto;
+    margin: auto;
+    width: 56%;
+    font-size: 30pt;
+}
+.sectionproject
+{
+   background: url(./lesimages/projectsimage.jpg) center;
+   background-size: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding : 0% 6%;
+    transition: 2s;
+    height:100vh;
+}
+.sectionproject:hover
+{
+    /* background-position:center; */
+    background-size: 140%;
+}
+.sectionproject>div
+{
+    position: relative;
+    width: 30.5%;
+   transition: 0.5s;
+   cursor: pointer;
+   margin: auto;
+}
+.sectionproject>div:hover
+{
+    width: 33%;
+}
+.sectionproject>div>span{
+ font-weight: 500;
+ color: rgb(0, 39, 87);
+ padding: 1%;
+ font-size: 13pt;
+
+}
+.sectionproject>div>img
+{
+    position: relative;
+    width:100%;
+    margin:0% auto;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0,0.8) 0px 5px 15px;
+    margin-bottom: 0.6%;
+}
+#infoprojects
+{
+    position: relative;
+    margin-left:auto;
+    margin-top: 12%;
+    width:50%;
+   font-size: 15.6pt;
+   color: rgb(0, 39, 87);
+    padding: 1.6%;
+    border-radius: 4px;
+    text-align: center;
+    cursor: auto;
+    /* background-color: antiquewhite; */
+
+}
+#infoprojects>div>img
+{
+    position: relative;
+    width: 75%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0,0.8) 0px 5px 15px;
+    margin-bottom: 2%;
+    border-radius: 4px;
+
+}
+#divinfo
+{
+  margin-top: 1%;
+  line-height: 30px;
+}
+#exite
+{
+    float: right;
+    background-color: none;
+    border-radius: 3px;
+    border: 1px solid rgb(0, 39, 87);
+    transition: 0.6s;
+    cursor: pointer;
+    color: rgb(0, 39, 87);
+}
+#exite:hover
+{
+    background-color: rgb(0, 39, 87);
+    color: white;
+}
+.sectioncontact
+{
+   background: url(./lesimages/skyblue.jpeg) center;
+   background-size: 100%;
+    position: relative;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    padding : 0% 6%;
+    transition: 2.4s;
+    height:100vh;
+
+}
+.sectioncontact:hover
+{
+    background-size: 160%;
+}
+.sectioncontact>div>div:nth-child(2)
+{
+    position: relative;
+    width:55%;
+    display: flex;
+    justify-content: space-between;
+    padding:2.4% 0%;
+    margin: auto;
+    font-family: Garamond;
+
+}
+.sectioncontact>div>div:nth-child(3)
+{
+    position: absolute;
+    width: 24%;
+    display: flex;
+    justify-content: space-between;
+    bottom: 5%;
+    left: 38%;
+}
+.sectioncontact>div>div:nth-child(1)
+{
+    font-weight: 549;
+    width:70%;
+    text-align: center;
+    padding-top:20% ;
+    margin: auto;
+    font-size: 36pt;
+    font-family: Garamond;
+    color: rgb(0, 39, 87);
+}
+.sectioncontact>div>div:nth-child(1)>p
+{
+    font-size: 16pt;
+    font-weight: 200;
+    margin-bottom: 2%;
+}
+#iconlink,#iconfb,#iconinsta
+{
+    font-size:45px ;
+    color: rgb(0, 39, 87);
+    text-decoration: none;
+    position: relative;
+    transition: 0.5s;
+}
+#iconfb:hover,#iconinsta:hover,#iconlink:hover
+{
+    color: rgb(20, 147, 225);
+}
+#iconmail,#iconwhat
+{
+    font-size: 18px;
+    color: rgb(0, 39, 87);
+    text-decoration: none;
+    position: relative;
+    transition: 0.5s;
+    cursor: default;
+}
+
+@media screen and (max-width: 724px)
+{
+    header
+    {
+        box-shadow:0px 5px 15px white;
+        background-color:rgb(15, 48, 88) ;
+        display: block;
+        /* justify-content: space-between; */
+        position: relative;
+        width: 92%;
+        z-index: 100;
+        padding:7% 4%;
+        transition: 2s;
+    }
+    .menu
+    {
+
+        font-size: 90%;
+        font-weight: 400;
+        list-style: none;
+        display: block;
+        position: relative;
+        margin: auto;
+        width:100%;
+        /* background-color: antiquewhite; */
+        /* justify-content: right; */
+    }
+    .menu>a>li 
+    {
+        border-bottom: 1.8px solid  white;
+    }
+    .name
+    {
+        color: white;
+        width: 100%;
+    }
+
+    .name>a
+    {
+        width: 16%;
+    }
+    /*  */
+
+    .sectionhome
+    {
+        transition: 2s;
+        text-align: center;
+        z-index: 0;
+        width: 100%;
+        padding:20% 0%;
+        margin: auto;
+        height:51vh;
+        background-size: cover;
+        background:url(./lesimages/simple-gradient-background-vector-winter-blue-pink_53876-105768.webp) left;
+    }
+   
+    .sectionhome h1
+    {
+        font-size: 260%;
+        margin:8% auto;
+       
+    }
+    #icongithub
+    {
+        margin-top: 6% ;
+    }
+
+   /*  */
+    
+   .sectionabout
+   {
+       position: relative;
+       padding:0%;
+       height:67vh;
+       background:url(./lesimages/aboutimage.jpg) right;
+       background-size:cover;
+       transition: 2s;
+   
+   }
+   .sectionabout>div
+   {
+       text-align: center;
+       color: rgb(0, 39, 87);
+       margin: auto;
+       padding: 24% 0%;
+       width:70%;
+       font-size: 120%;
+   }
+   .sectionabout>div>h1
+   {
+     font-size: 200%;
+     margin-bottom: 4%;
+   }
+   /*  */
+   .sectionproject
+   {
+      background: url(./lesimages/projectsimage.jpg) center;
+      background-size: cover;
+       position: relative;
+       display: block;
+       padding :16% 8% ;
+       transition: 2s;
+       height:76vh;
+      
+   }
+   .sectionproject:hover
+   {
+    background-size: cover;
+    background-position: right;
+   }
+   .sectionproject>div
+   {
+       margin-bottom: 12%;
+       position: relative;
+       width:100%;
+       cursor: pointer;
+       
+   }
+   .sectionproject>div:hover
+   {
+    width:100%;
+   }
+   .sectionproject>div>span{
+   
+    font-size: 100%;
+   
+   }
+  
+   #infoprojects
+   {
+       position: relative;
+       margin-left:auto;
+       margin-top: 6%;
+       width:100%;
+       font-size: 100%;
+       color: rgb(0, 39, 87);
+       border-radius: 4px;
+       text-align: center;
+       cursor: auto;
+       /* background-color: antiquewhite; */
+   
+   }
+   #infoprojects>div>img
+   {
+       width: 100%;
+       margin:4% auto;
+       box-shadow: rgba(0, 0, 0,0.8) 0px 5px 15px;
+   }
+   #divinfo
+   {
+     line-height: 24px;
+   }
+   #exite
+   {
+       padding: 0.1% 1.6%;
+   }
+   /*  */
+   .sectioncontact
+{
+    background: url(./lesimages/skyblue.jpeg) center;
+    background-size: cover;
+    position: relative;
+    padding : 0% 6%;
+    transition: 2.4s;
+    height:70vh;
+
+}
+.sectioncontact:hover
+{
+    background-size:cover;
+    background-position: left;
+}
+.sectioncontact>div>div:nth-child(2)
+{
+    width:100%;
+    display: block;
+    padding:2.4% 0%;
+    margin: auto;
+    font-family: Garamond;
+    font-size: 14pt;
+    text-align: center;
+
+}
+.sectioncontact>div>div:nth-child(3)
+{
+    width: 100%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    left: 0;
+    
+    
+}
+.sectioncontact>div>div:nth-child(1)
+{
+    width:100%;
+    text-align: center;
+    padding-top:28% ;
+    font-size:130%;
+}
+
+#iconlink,#iconfb,#iconinsta
+{
+    font-size:200% ;
+    margin: 6% 0%;
+}
+
+#iconmail,#iconwhat
+{
+    font-size: 98%;
+    margin:2% 1%;
+}
+   
+}
